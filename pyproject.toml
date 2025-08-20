@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "EnvSecure Manager: CLI para gerenciamento seguro de variáveis de ambiente e segredos"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = {text = "GPL-3.0-or-later"}
 authors = [
   { name = "EnvSecure Team" }
 ]
