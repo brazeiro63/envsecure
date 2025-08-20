@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envsecure-manager"
+version = "0.1.0"
+description = "EnvSecure Manager: CLI para gerenciamento seguro de variáveis de ambiente e segredos"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  { name = "EnvSecure Team" }
+]
+dependencies = [
+  "click>=8.0.0",
+  "cryptography>=3.0.0",
+  "paramiko>=2.7.0",
+  "pydantic>=1.8.0,<3.0.0",
+  "rich>=10.0.0",
+  "PyYAML>=5.4.0",
+  "python-dotenv>=0.19.0",
+  "Jinja2>=3.0.0"
+]
+
+[project.urls]
+Homepage = "https://example.com/envsecure"
+
+[project.scripts]
+envsecure = "cli.main:cli"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests", "templates"]
+

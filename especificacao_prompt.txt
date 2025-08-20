@@ -1,0 +1,236 @@
+🤖 Prompt para Agente de Geração de Código
+
+📋 Contexto e Objetivo
+
+Você deve criar uma aplicação Python independente e genérica para gerenciamento de variáveis de ambiente e segredos.
+(baseada na solução segura implementada no diretório /environment do projeto PoisSim WhatsApp Assistant)
+
+🎯 Especificações da Aplicação
+
+Nome da Aplicação: EnvSecure Manager
+
+Arquitetura Desejada:
+
+envsecure/
+├── cli/
+│   ├── __init__.py
+│   ├── main.py              # Entry point CLI
+│   ├── commands/
+│   │   ├── __init__.py
+│   │   ├── init.py          # Inicializar projeto
+│   │   ├── catalog.py       # Catalogar variáveis
+│   │   ├── configure.py     # Configurar ambientes
+│   │   ├── deploy.py        # Deploy seguro
+│   │   └── validate.py      # Validar configurações
+├── core/
+│   ├── __init__.py
+│   ├── scanner.py           # Escanear código por variáveis
+│   ├── catalog.py           # Gerenciar catálogo
+│   ├── template.py          # Gerar templates
+│   ├── secrets.py           # Gerenciar segredos
+│   ├── validator.py         # Validações de segurança
+│   └── deployer.py          # Deploy para ambientes
+├── models/
+│   ├── __init__.py
+│   ├── environment.py       # Modelo de ambiente
+│   ├── variable.py          # Modelo de variável
+│   └── secret.py            # Modelo de segredo
+├── utils/
+│   ├── __init__.py
+│   ├── crypto.py            # Criptografia/hashing
+│   ├── ssh.py               # Operações SSH
+│   └── filesystem.py       # Operações de arquivo
+├── templates/
+│   ├── project_structure/
+│   ├── deploy_scripts/
+│   └── config_files/
+├── tests/
+├── setup.py
+├── requirements.txt
+├── README.md
+└── pyproject.toml
+
+🔍 Funcionalidades Principais
+
+1. Escaneamento Automático de Código
+
+envsecure scan --path /projeto --output catalog.csv
+- Escanear arquivos Python, Docker, YAML, JSON por variáveis de ambiente
+- Detectar padrões: os.getenv(), ${VAR}, ENV VAR, etc.
+- Categorizar automaticamente por padrões (database, api_keys, secrets, etc.)
+- Exportar catálogo em CSV/JSON
+
+2. Inicialização de Projeto
+
+envsecure init --project-name "minha-app" --environments dev,staging,prod
+- Criar estrutura de diretórios segura
+- Gerar templates de configuração
+- Configurar .gitignore apropriado
+- Criar scripts de deploy seguros
+
+3. Gerenciamento de Catálogo
+
+envsecure catalog add DATABASE_URL --category database --sensitive true --required true
+envsecure catalog list --filter sensitive=true
+envsecure catalog export --format csv
+
+4. Configuração de Ambientes
+
+envsecure configure dev --interactive
+envsecure configure prod --from-template --secrets-file secrets.prod
+
+5. Deploy Seguro
+
+envsecure deploy dev --local
+envsecure deploy prod --ssh user@host:/path --key ~/.ssh/id_rsa
+
+6. Validação de Segurança
+
+envsecure validate --environment prod --check-strength --audit-secrets
+
+🛡️ Recursos de Segurança Obrigatórios
+
+Baseados na Solução Original:
+
+1. Separação Template/Secrets
+  - Templates .safe sem valores sensíveis
+  - Arquivos secrets.* separados e não commitados
+  - Substituição segura via envsubst ou similar
+2. Validação Robusta
+  - Verificar presença de segredos obrigatórios
+  - Detectar valores placeholder (your_*_here)
+  - Validar força de senhas/chaves (mínimo 16-32 chars)
+  - Confirmar resolução completa de templates
+3. Deploy Seguro
+  - SSH criptografado para ambientes remotos
+  - Permissões restritivas (600) nos arquivos
+  - Backup automático antes de substituir
+  - Destruição segura de arquivos temporários (shred)
+4. Prevenção de Vazamentos
+  - Arquivos de segredos no .gitignore
+  - Logs não expõem valores sensíveis
+  - Templates git-safe separados
+
+🎨 Interface CLI Desejada
+
+# Comando principal
+envsecure --help
+
+# Comandos principais
+envsecure init                    # Inicializar projeto
+envsecure scan                    # Escanear variáveis
+envsecure catalog                 # Gerenciar catálogo
+envsecure configure               # Configurar ambientes
+envsecure deploy                  # Deploy seguro
+envsecure validate               # Validar configuração
+envsecure generate-keys          # Gerar chaves seguras
+
+# Exemplos de uso
+envsecure init myapp --envs dev,prod
+envsecure scan --path . --pattern "*.py,*.yml,Dockerfile"
+envsecure catalog add JWT_SECRET_KEY --category auth --sensitive --min-length 32
+envsecure configure dev --wizard
+envsecure deploy prod --ssh deploy@server --validate-first
+envsecure validate --env prod --audit --report security-audit.txt
+
+📊 Modelos de Dados
+
+Variable Model:
+
+@dataclass
+class EnvironmentVariable:
+    name: str
+    category: str
+    description: str
+    required: bool = False
+    sensitive: bool = False
+    min_length: Optional[int] = None
+    pattern: Optional[str] = None
+    default_dev: Optional[str] = None
+    default_prod: Optional[str] = None
+    detected_in: List[str] = field(default_factory=list)
+
+Environment Model:
+
+@dataclass
+class Environment:
+    name: str
+    description: str
+    variables: Dict[str, str]
+    secrets: Dict[str, str]
+    deploy_target: Optional[DeployTarget] = None
+
+Deploy Target:
+
+@dataclass
+class DeployTarget:
+    type: str  # 'local', 'ssh', 'docker', 'k8s'
+    host: Optional[str] = None
+    user: Optional[str] = None
+    key_file: Optional[str] = None
+    target_path: str = ".env"
+
+🔧 Dependências Sugeridas
+
+# requirements.txt
+click>=8.0.0          # CLI framework
+cryptography>=3.0.0   # Criptografia
+paramiko>=2.7.0       # SSH operations
+pydantic>=1.8.0       # Data validation
+rich>=10.0.0          # CLI formatting
+pyyaml>=5.4.0         # YAML parsing
+python-dotenv>=0.19.0 # .env manipulation
+jinja2>=3.0.0         # Template engine
+
+📝 Casos de Uso Principais
+
+Caso 1: Novo Projeto Python
+
+1. envsecure init minha-api --envs dev,staging,prod
+2. envsecure scan --path . --auto-categorize
+3. envsecure configure dev --wizard
+4. envsecure deploy dev --local
+
+Caso 2: Projeto Existente
+
+1. envsecure scan --path . --import-existing .env
+2. envsecure catalog review --interactive
+3. envsecure configure --migrate-from .env
+4. envsecure validate --all-envs --security-audit
+
+Caso 3: Deploy Produção
+
+1. envsecure configure prod --secrets-wizard
+2. envsecure validate prod --strict
+3. envsecure deploy prod --ssh user@prod-server --backup --dry-run
+4. envsecure deploy prod --ssh user@prod-server --confirm
+
+🎯 Diferenciais da Solução
+
+1. Genérica: Funciona com qualquer projeto Python
+2. Segura: Implementa as melhores práticas da solução original
+3. Intuitiva: CLI amigável com wizards interativos
+4. Auditável: Logs completos e relatórios de segurança
+5. Extensível: Arquitetura modular para novos recursos
+
+🚀 Entrega Esperada
+
+Você deve entregar:
+
+1. ✅ Código Python completo da aplicação
+2. ✅ CLI funcional com todos os comandos
+3. ✅ Testes unitários para funções críticas
+4. ✅ Documentação completa (README, exemplos)
+5. ✅ Setup/Instalação (setup.py, pyproject.toml)
+6. ✅ Templates para diferentes tipos de projeto
+
+Critérios de Qualidade:
+- Código limpo e bem documentado
+- Tratamento robusto de erros
+- Validação de entrada do usuário
+- Logs informativos mas seguros
+- Compatibilidade Python 3.8+
+
+---
+🎯 Objetivo Final: Criar uma ferramenta que qualquer desenvolvedor Python possa usar para implementar gerenciamento seguro de variáveis de ambiente em
+seus projetos, seguindo as melhores práticas de segurança da solução original do PoisSim.

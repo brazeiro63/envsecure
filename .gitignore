@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+env/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+.env
+.env.*
+secrets.*
+.envsecure/secrets.*
+.envsecure/tmp/
+templates/**/generated/
+# Arquivos gerados pelo scan e relatórios
+scan_*.json
+*_audit.txt
+prod-audit.txt
+audit.txt
+# Arquivos de deploy gerados
+.envsecure/.env.*
+.envsecure/.env.*.bak
+# Catálogo específico do projeto (contém informações privadas)
+.envsecure/catalog.json
+
