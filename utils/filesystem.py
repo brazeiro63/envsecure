@@ -18,3 +18,4 @@ def atomic_write(path: Path, content: str) -> None:
 	ensure_mode(path)
 
 
+

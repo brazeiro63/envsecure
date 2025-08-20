@@ -21,3 +21,4 @@ def generate_keys_cmd(num_bytes: int, fmt: str) -> None:
 	console.print(value)
 
 
+

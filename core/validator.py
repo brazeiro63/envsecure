@@ -32,3 +32,4 @@ def validate_template_and_secrets(template_path: Path, secrets_path: Path) -> No
 		raise ValueError("Segredos obrigatórios ausentes: " + ", ".join(missing))
 
 
+

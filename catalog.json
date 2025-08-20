@@ -1,0 +1,405 @@
+{
+  "GITHUB_SHA": [
+    "G:\\saas_whatsapp\\docker-compose-ci.yml"
+  ],
+  "GITHUB_REPOSITORY": [
+    "G:\\saas_whatsapp\\docker-compose-ci.yml"
+  ],
+  "DB_PASSWORD": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FLASK_SECRET_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "GROQ_API_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "JWT_SECRET_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OPENAI_API_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MINIO_ACCESS_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EVOLUTION_API_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SECRET_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_PASSWORD": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_PASSWORD": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DEEPSEEK_API_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MINIO_SECRET_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CSRF_SECRET_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "IMAGE_TAG": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "ANTHROPIC_API_KEY": [
+    "G:\\saas_whatsapp\\docker-compose.production.yml",
+    "G:\\saas_whatsapp\\stack.yml",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "TELEGRAM_BOT_TOKEN": [
+    "G:\\saas_whatsapp\\stack.yml"
+  ],
+  "INSTAGRAM_PAGE_TOKEN": [
+    "G:\\saas_whatsapp\\stack.yml"
+  ],
+  "FACEBOOK_PAGE_TOKEN": [
+    "G:\\saas_whatsapp\\stack.yml"
+  ],
+  "IMAGES": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "IMG": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "BACKEND_REPO": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "BASH_COMMAND": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "FRONTEND_REPO": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "HOME": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "LINENO": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "GHCR_USERNAME": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "STACK_NAME": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "GHCR_TOKEN": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "VPS_STACK_DIR": [
+    "G:\\saas_whatsapp\\.github\\workflows\\build-and-stack.yml"
+  ],
+  "DASHBOARD_USERNAME": [
+    "G:\\saas_whatsapp\\config\\kong.yml"
+  ],
+  "FLASK_ENV": [
+    "G:\\saas_whatsapp\\webapp\\app.py",
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CREWAI_VERBOSE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_FROM_NAME": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "POOL_SIZE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_SOCKET_CONNECT_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OPENAI_MODEL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_DOMAIN": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_CPU_LIMIT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "JWT_ALGORITHM": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_SERVICE_NAME": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_DOMAIN": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MAX_OVERFLOW": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_SSL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CREWAI_MEMORY": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_EXPORTER_OTLP_ENDPOINT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_HOST": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_TRACES_ENABLED": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FROM_EMAIL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_SOCKET_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_USE_TLS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DB_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_MEMORY_LIMIT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "ALLOWED_HOSTS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OPENAI_TEMPERATURE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "LOG_BACKUP_COUNT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SESSION_COOKIE_SAMESITE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "LOG_LEVEL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SESSION_COOKIE_HTTPONLY": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_MAX_CONNECTIONS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_SERVICE_VERSION": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_USERNAME": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "WORKERS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FLASK_APP": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_MEMORY_RESERVATION": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_REPLICAS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_USER": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MINIO_BUCKET": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "ENVIRONMENT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "TIMEOUT_TTL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EVOLUTION_API_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_DB": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "API_BASE_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_USE_TLS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "LOG_MAX_BYTES": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CREWAI_MAX_ITERATIONS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DATABASE_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CONVERSATION_TTL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_PASSWORD": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_FROM": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_METRICS_ENABLED": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "API_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EVOLUTION_API_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "PROTOCOL_TTL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "JWT_REFRESH_TOKEN_EXPIRE_DAYS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_CPU_RESERVATION": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DB_USER": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "LOG_FILE_PATH": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DEFAULT_TIMEOUT_MINUTES": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "WEBHOOK_BASE_URL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MINIO_SECURE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_HOST": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DEFAULT_MAX_REMINDERS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DB_HOST": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MINIO_ENDPOINT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_REPLICAS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DEFAULT_WARNING_MINUTES": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_MEMORY_RESERVATION": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_PORT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_CPU_LIMIT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_TOKEN_EXPIRE_HOURS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "MAX_CONNECTIONS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CREWAI_MAX_EXECUTION_TIME": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "LOG_FORMAT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DEBUG": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "BACKEND_MEMORY_LIMIT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "JWT_ACCESS_TOKEN_EXPIRE_MINUTES": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SESSION_COOKIE_SECURE": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "REDIS_HOST": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_TIMEOUT": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "CORS_ORIGINS": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "SMTP_USE_SSL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "EMAIL_USE_SSL": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "OTEL_LOGS_ENABLED": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "DB_NAME": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ],
+  "FRONTEND_CPU_RESERVATION": [
+    "G:\\saas_whatsapp\\yml\\docker-compose.poissim-production-variables.yml"
+  ]
+}

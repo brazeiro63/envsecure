@@ -16,3 +16,4 @@ class EnvironmentVariable:
 	detected_in: List[str] = field(default_factory=list)
 
 
+

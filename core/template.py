@@ -13,3 +13,4 @@ def render_from_template(template_path: Path, variables: Dict[str, str]) -> str:
 	return "\n".join(content) + "\n"
 
 
+
