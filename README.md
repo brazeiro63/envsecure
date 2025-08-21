@@ -6,8 +6,18 @@ Ferramenta CLI para gerenciamento seguro de variáveis de ambiente e segredos em
 
 ```bash
 python -m venv .venv
+
+# Ative o ambiente virtual conforme seu sistema operacional:
+# Windows (PowerShell):
 . .venv/Scripts/Activate.ps1
-python -m pip install -e .
+# Linux/macOS (bash/zsh):
+source .venv/bin/activate
+
+# Atualize o pip para melhor performance:
+python -m pip install --upgrade pip
+
+# Instale as dependências e trate possíveis erros:
+python -m pip install -e . || { echo "Falha ao instalar dependências"; exit 1; }
 ```
 
 ## Uso rápido

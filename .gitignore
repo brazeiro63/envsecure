@@ -26,3 +26,5 @@ audit.txt
 # Catálogo específico do projeto (contém informações privadas)
 .envsecure/catalog.json
 
+
+.vscode/
